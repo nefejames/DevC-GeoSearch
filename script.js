@@ -1,4 +1,4 @@
-function getWeatherData(lat, lng) {
+const getWeatherData = (lat, lng) => {
   let windSpeed = document.querySelector(".wind-speed span");
   let temp = document.querySelector(".temp span");
   let humidity = document.querySelector(".humidity span");
@@ -34,9 +34,9 @@ function getWeatherData(lat, lng) {
       fahrenheitConverter.addEventListener("click", convertToFahrenheit);
       celciusConverter.addEventListener("click", convertToCelcius);
     });
-}
+};
 
-function placesSearch() {
+const placesSearch = () => {
   let input = document.getElementById("search");
 
   let autocomplete = new google.maps.places.Autocomplete(input, {
@@ -65,4 +65,4 @@ function placesSearch() {
       window.open(`${fb}`);
     });
   });
-}
+};

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DevC GeoSearch</title>
+  </head>
+  <body>
+    <header>
+      <h1>DevC GeoSearch App</h1>
+    </header>
+
+    <main>
+      <!--Sidebar Section-->
+      <section class="sidebar">
+        <div class="left-container">
+          <div class="location-img"></div>
+          <div class="location-details">
+            <h2><span></span></h2>
+
+            <p class="wind-speed">Wind Speed: <span></span></p>
+            <p class="temp">Temperature: <span></span></p>
+            <p class="humidity">Humidity: <span></span></p>
+            <p class="weather">Weather Condition: <span></span></p>
+            <div class="temp-converters">
+              <button class="fahrenheit">Fahrenheit</button>
+              <button class="celcius">Celcius</button>
+            </div>
+            <a href="" id="fb-share-button" class="share">Share to Facebook</a>
+          </div>
+        </div>
+      </section>
+
+      <!--Main Map Section-->
+      <section class="map">
+        <div class="right-container">
+          <form action="">
+            <input type="text" placeholder="place of interest" id="search" />
+          </form>
+
+          <img alt="a static google map" id="static-image" />
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Rg5XWaKsYOIii9RUbUWx_G5xq3LXpag&libraries=places&callback=placesSearch"></script>
+  </body>
+</html>

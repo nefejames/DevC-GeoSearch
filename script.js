@@ -71,7 +71,7 @@ function placesSearch() {
 
     fbButton.addEventListener("click", () => {
       window.open(
-        `http://www.facebook.com/sharer/sharer.php?u=${window.location.href},facebook-share-dialog,height=350,width=500`
+        `http://www.facebook.com/sharer/sharer.php?u=https://nefejames.github.io/DevC-GeoSearch/index.html,facebook-share-dialog,height=350,width=500`
       );
     });
   });

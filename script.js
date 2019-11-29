@@ -1,4 +1,5 @@
 function getWeatherData(lat, lng) {
+  //weather data setup
   let windSpeed = document.querySelector(".wind-speed span");
   let temp = document.querySelector(".temp span");
   let humidity = document.querySelector(".humidity span");
@@ -37,6 +38,7 @@ function getWeatherData(lat, lng) {
 }
 
 function placesSearch() {
+  //autocomplete functionality
   let input = document.getElementById("search");
 
   let autocomplete = new google.maps.places.Autocomplete(input, {
@@ -47,7 +49,11 @@ function placesSearch() {
     let nearPlace = autocomplete.getPlace();
     let lat = nearPlace.geometry.location.lat();
     let lng = nearPlace.geometry.location.lng();
+    let h2 = document.querySelector("h2");
 
+    h2.textContent = nearPlace.formatted_address;
+
+    //static map DOM manipulation
     let img = document.getElementById("static-image");
 
     let imgUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&size=300x300&markers=icon:http://www.megaadresse.com/images/icons/google-maps.png|${lat},${lng}&zoom=17&scale=2&maptype=hybrid&key=AIzaSyC6Rg5XWaKsYOIii9RUbUWx_G5xq3LXpag`;

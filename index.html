@@ -16,10 +16,9 @@
       <!--Sidebar Section-->
       <section class="sidebar">
         <div class="left-container">
-          <div class="location-img"></div>
-          <div class="location-details">
-            <h2><span></span></h2>
 
+          <div class="location-details">
+            <h2></h2>
             <p class="wind-speed">Wind Speed: <span></span></p>
             <p class="temp">Temperature: <span></span></p>
             <p class="humidity">Humidity: <span></span></p>
@@ -40,7 +39,10 @@
             <input type="text" placeholder="place of interest" id="search" />
           </form>
 
-          <img alt="a static google map" id="static-image" />
+          <div class="map-container">
+            <img id="static-image" />
+          </div>
+
         </div>
       </section>
     </main>

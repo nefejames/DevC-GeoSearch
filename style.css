@@ -94,7 +94,7 @@ form input {
   border: none;
   flex-grow: 1;
   margin-bottom: 1rem;
-  box-shadow: 0 3px 6px var(--map-shadow-clr);
+  box-shadow: 3px 3px 6px #ced3e0;
 }
 
 .sidebar a.share {
@@ -130,7 +130,7 @@ img {
 }
 
 /*media queries*/
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1000px) {
   main {
     flex-direction: row;
   }

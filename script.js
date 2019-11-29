@@ -39,16 +39,5 @@ function placesSearch() {
     img.src = imgUrl;
 
     getWeatherData(lat, lng);
-
-    //share on facebook
-    let fbButton = document.getElementById("fb-share-button");
-
-    let fb = `http://www.facebook.com/sharer/sharer.php?u=${imgUrl},facebook-share-dialog,height=350,width=500`;
-
-    fbButton.addEventListener("click", () => {
-      window.open(
-        `http://www.facebook.com/sharer/sharer.php?u=${window.location.href},facebook-share-dialog,height=350,width=500`
-      );
-    });
   });
 }
